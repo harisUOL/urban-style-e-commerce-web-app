@@ -8,7 +8,7 @@ const Home = () => {
 
   // FETCH FEATURED PRODUCTS (top 6)
   useEffect(() => {
-  fetch("http://http://3.89.186.55/api/products")
+  fetch("http://3.89.186.55/api/products")
     .then(res => res.json())
     .then(data => {
       setProducts(data.slice(-6));   // <-- last 6 products

@@ -6,7 +6,7 @@ const ProductDetails = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://http://3.89.186.55/api/products${id}`)
+    fetch(`http://3.89.186.55/api/products${id}`)
       .then(res => res.json())
       .then(data => setProduct(data));
   }, [id]);
