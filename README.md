@@ -5,9 +5,7 @@ UrbanStyle provides category-based browsing, detailed product views, a full cart
 
 ---
 
-## 📸 Screenshots
-
-*(Add project screenshots here)*
+![Alt text](Screenshot from 2025-11-20 08-19-08.png)
 
 ---
 
@@ -46,3 +44,105 @@ UrbanStyle provides category-based browsing, detailed product views, a full cart
 
 ## 📁 Folder Structure
 
+urban-style-e-commerce-web-app/
+│
+├── client/ # React frontend
+│ ├── src/
+│ └── dist/ # Production build
+│
+└── server/ # Backend API
+├── routes/
+├── controllers/
+├── config/
+└── server.js
+
+---
+
+## 🚀 Installation & Setup (Local Development)
+
+### 1️⃣ Clone the repository
+```
+git clone https://github.com/YOUR_USERNAME/urban-style-e-commerce-web-app.git
+cd urban-style-e-commerce-web-app
+```
+
+2️⃣ Backend Setup
+```
+cd server
+npm install
+```
+
+Create .env:
+```
+MONGO_URI=your_mongodb_connection
+PORT=5000
+```
+
+Start server:
+```
+node server.js
+```
+
+3️⃣ Frontend Setup
+```
+cd ../client
+npm install
+npm run dev
+```
+```
+Frontend: http://localhost:5173
+
+Backend: http://localhost:5000/api/products
+```
+🚀 Production Deployment (AWS EC2)
+
+SSH into EC2
+
+Clone project
+
+Build frontend:
+```
+cd client
+npm run build
+```
+
+Start backend with PM2:
+```
+cd ../server
+pm2 start server.js
+```
+
+Configure Nginx (proxy + static hosting)
+
+Restart Nginx:
+```
+sudo systemctl restart nginx
+```
+
+Your app goes live on your custom subdomain.
+
+🧪 API Endpoints
+Get All Products
+GET /api/products
+
+Get Single Product
+GET /api/products/:id
+
+Add Product
+POST /api/products
+
+📌 Future Improvements
+
+User authentication (JWT)
+
+Admin dashboard for product management
+
+Stripe payment integration
+
+Wishlist system
+
+Reviews & ratings
+
+❤️ Acknowledgements
+
+This project showcases real-world full-stack development, covering UI design, backend architecture, database modeling, deployment pipelines, and production hosting.
