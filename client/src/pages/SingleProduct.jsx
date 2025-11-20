@@ -8,16 +8,13 @@ const SingleProduct = () => {
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch(`http://3.89.186.55/api/products${id}`)
+    fetch(`/api/products/${id}`)
       .then(res => res.json())
       .then(data => {
-        
-
         const fixed = {
           ...data,
           _id: data._id || data.id || id,
         };
-
         setProduct(fixed);
       })
       .catch(err => console.error("Error fetching product:", err));
@@ -32,12 +29,11 @@ const SingleProduct = () => {
   }
 
   return (
-<div className="max-w-7xl mx-auto px-8 pt-28 pb-20 min-h-screen">
-
+    <div className="max-w-7xl mx-auto px-8 pt-28 pb-20 min-h-screen">
       <Link to="/products" className="underline text-gray-600">← Back</Link>
 
       <div className="flex flex-col md:flex-row gap-10 mt-6">
-        
+
         {/* IMAGE */}
         <div className="w-full md:w-1/2">
           <img
@@ -54,10 +50,7 @@ const SingleProduct = () => {
           <p className="text-gray-600">{product.description}</p>
 
           <button
-            onClick={() => {
-              console.log("Adding to cart:", product);
-              addToCart(product);
-            }}
+            onClick={() => addToCart(product)}
             className="bg-black text-yellow-400 px-6 py-3 rounded-lg hover:bg-gray-800 transition w-max"
           >
             Add to Cart
