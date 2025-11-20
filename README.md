@@ -5,7 +5,7 @@ UrbanStyle provides category-based browsing, detailed product views, a full cart
 
 ---
 
-![Alt text](Screenshot from 2025-11-20 08-19-08.png)
+![Alt text](ss.png)
 
 ---
 
