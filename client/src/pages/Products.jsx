@@ -18,7 +18,7 @@ const [size, setSize] = useState("");
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setLoading(true);
-    fetch("http://localhost:5000/api/products")
+    fetch("/api/products")
       .then(res => res.json())
       .then(data => {
         setProducts(data);
