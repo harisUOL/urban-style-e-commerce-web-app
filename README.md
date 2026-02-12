@@ -4,7 +4,7 @@ A modern, fully responsive e-commerce web application built with **React (Vite)*
 UrbanStyle provides category-based browsing, detailed product views, a full cart system, and a clean user experience — all deployed on **AWS EC2** with **Nginx** and a **custom domain**.
 
 ---
-
+ 
 ![Alt text](ss.png)
 
 ---
