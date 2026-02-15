@@ -14,7 +14,7 @@ UrbanStyle provides category-based browsing, detailed product views, a full cart
 - **🛒 Full Cart System** — Add, update, remove items with real-time UI updates  
 - **📦 MongoDB Product Storage** — All products served via a custom REST API  
 - **🔍 Category-Based Browsing** — Filter and explore products effortlessly  
-- **📱 Fully Responsive UI** — Optimized layout for mobile and desktop  
+- **📱 Fully Responsive UI** — Optimized layout for mobile and desktop   
 - **🏷️ Single Product Pages** — Dynamic, data-driven product detail view  
 - **🚀 Deployed on AWS EC2** — Nginx reverse proxy + PM2 process manager  
 - **🌐 Custom Domain Support** — Live on a dedicated subdomain  
