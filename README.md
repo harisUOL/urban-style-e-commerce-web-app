@@ -8,7 +8,7 @@ UrbanStyle provides category-based browsing, detailed product views, a full cart
 ![Alt text](ss.png)
 
 ---
-
+ 
 ## ✨ Features
  
 - **🛒 Full Cart System** — Add, update, remove items with real-time UI updates  
