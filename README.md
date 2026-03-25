@@ -9,7 +9,7 @@ UrbanStyle provides category-based browsing, detailed product views, a full cart
 
 ---
  
-## ✨ Features
+## ✨ Features 
  
 - **🛒 Full Cart System** — Add, update, remove items with real-time UI updates  
 - **📦 MongoDB Product Storage** — All products served via a custom REST API  
